@@ -77,8 +77,6 @@ def hangman() :
         index = word.find(guess)
         word = word[:index] + "_" + word[index + 1:]
         display = display[:index] + guess + display[index + 1:]
-        
-        print(display + "\n")
     
     elif guess in already_guessed :
         print("Coba masukkan huruf lain. \n")
