@@ -6,9 +6,31 @@ def main() :
     global already_guessed
     global length
     global play_game
+    global clue_of_words
+    global clue_choice
 
-    words_to_guess = ["bulan", "matahari", "bumi", "mouse", "keyboard", "pot", "smartphone"]
+    words_to_guess = [
+        "bulan", 
+        "matahari", 
+        "bumi", 
+        "mouse", 
+        "keyboard", 
+        "pot", 
+        "smartphone"
+        ]
+    clue_of_words = [
+        "satelit alami bumi",
+        "bintang di tata surya kita",
+        "planet yang bisa di huni",
+        "alat input komputer untuk menggerakkan cursor",
+        "alat input komputer untuk mengetik",
+        "tempat atau wadah untuk menanam tanaman",
+        "gawai pintar"
+    ]
     word = random.choice(words_to_guess)
+
+    clue_choice = words_to_guess.index(word)
+
     length = len(word)
     count = 0
     display = '_' * length
