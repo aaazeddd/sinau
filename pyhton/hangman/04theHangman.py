@@ -5,9 +5,13 @@ def hangman() :
     global word
     global already_guessed
     global play_game
+    global clue_choice
+    global clue_of_words
 
     limit = 5
 
+    print("\nKata terdiri dari %d huruf" % (length)) 
+    print("\n = %s =\n" % (clue_of_words[clue_choice]))
     guess = input("Kata yang harus di tebak : " + display + " Masukkan huruf yang ingin ditebak : \n")
     guess = guess.strip()
 
